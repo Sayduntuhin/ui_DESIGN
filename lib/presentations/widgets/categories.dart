@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/presentations/widgets/categoryButton.dart';
 
 class Categories extends StatelessWidget {
+  const Categories({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(

@@ -2,6 +2,8 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class ImageSlider extends StatelessWidget {
+  const ImageSlider({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -12,9 +14,9 @@ class ImageSlider extends StatelessWidget {
             autoPlay: true,
             viewportFraction: 1.0,
             enableInfiniteScroll: true,
-            autoPlayInterval: Duration(seconds: 3),
+            autoPlayInterval: const Duration(seconds: 3),
             autoPlayCurve: Curves.easeInOut,
-            scrollPhysics: BouncingScrollPhysics(),
+            scrollPhysics: const BouncingScrollPhysics(),
           ),
           items: [
             'assets/slider/image.png',
@@ -25,7 +27,7 @@ class ImageSlider extends StatelessWidget {
               builder: (BuildContext context) {
                 return Container(
                   width: MediaQuery.of(context).size.width,
-                  margin: EdgeInsets.symmetric(horizontal: 5.0),
+                  margin: const EdgeInsets.symmetric(horizontal: 5.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(
@@ -45,10 +47,10 @@ class ImageSlider extends StatelessWidget {
               Container(
                 width: 8.0,
                 height: 8.0,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0),
+                margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: i == 0 ? Colors.white : Color(0xFF4F5055),
+                  color: i == 0 ? Colors.white : const Color(0xFF4F5055),
                 ),
               ),
           ],

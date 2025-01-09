@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class SearchAndSettings extends StatelessWidget {
+  const SearchAndSettings({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -13,16 +15,16 @@ class SearchAndSettings extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.transparent,
                 borderRadius: BorderRadius.circular(30.0),
-                border: Border.all(color: Color(0xFF888A8F))),
-            child: Row(
+                border: Border.all(color: const Color(0xFF888A8F))),
+            child: const Row(
               children: [
-                const SizedBox(width: 20),
+                SizedBox(width: 20),
                 Expanded(
                   child: TextField(
-                    style: const TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
                       hintText: 'Search',
-                      hintStyle: const TextStyle(color: Colors.grey),
+                      hintStyle: TextStyle(color: Colors.grey),
                       border: InputBorder.none,
                     ),
                   ),

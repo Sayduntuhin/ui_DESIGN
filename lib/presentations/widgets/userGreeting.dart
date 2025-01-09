@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:movie_app/presentations/widgets/profileAvatar.dart';
 
 class UserGreeting extends StatelessWidget {
+  const UserGreeting({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Column(
+        const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text('Hello Rafsan',
@@ -15,7 +17,7 @@ class UserGreeting extends StatelessWidget {
                 style: TextStyle(color: Colors.grey, fontSize: 14)),
           ],
         ),
-        Spacer(),
+        const Spacer(),
         ProfileAvatar(),
       ],
     );

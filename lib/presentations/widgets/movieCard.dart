@@ -23,7 +23,7 @@ class MovieCard extends StatelessWidget {
         ),
         SizedBox(height: 8),
         Container(
-          width: 120,
+          width: 100,
           child: Text(
             movie['title']!,
             style: TextStyle(color: Colors.white),

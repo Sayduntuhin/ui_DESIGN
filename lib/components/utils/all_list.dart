@@ -7,12 +7,17 @@ final List<Map<String, String>> trendingMovies = [
 
 final List<Map<String, String>> continueWatching = [
   {'image': 'assets/slider/image.png', 'title': 'Wednesday | Season -1\nEpisode -3'},
-  {'image': 'assets/slider/image.png', 'title': 'Dark Woods'},
-  {'image': 'assets/slider/image.png', 'title': 'Mystery Lake'},
+  {'image': 'assets/slider/image.png', 'title': 'Emily in Paris | Season - 1\nEpisode - 1'},
+  {'image': 'assets/slider/image.png', 'title': 'Wednesday | Season -1\nEpisode -3'},
+  {'image': 'assets/slider/image.png', 'title': 'Emily in Paris | Season - 1\nEpisode - 1'},
+  {'image': 'assets/slider/image.png', 'title': 'Wednesday | Season -1\nEpisode -3'},
 ];
 
 final List<Map<String, String>> recommendedForYou = [
-  {'image': 'assets/slider/image.png', 'title': 'Double Love'},
-  {'image': 'assets/slider/image.png', 'title': 'Cursor of the truth'},
-  {'image': 'assets/slider/image.png', 'title': 'Secret Island'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Double Love'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Cursor of the truth'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Secret Island'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Secret Island'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Secret Island'},
+  {'image':  'assets/t_image/t_image.jpg', 'title': 'Secret Island'},
 ];
