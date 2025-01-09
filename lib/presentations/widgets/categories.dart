@@ -14,6 +14,7 @@ class Categories extends StatelessWidget {
           CategoryButton(title: 'Action'),
           CategoryButton(title: 'Anime'),
           CategoryButton(title: 'Sci-fi'),
+          CategoryButton(title: 'Thriller'),
         ],
       ),
     );
