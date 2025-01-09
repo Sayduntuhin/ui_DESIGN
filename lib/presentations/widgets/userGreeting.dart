@@ -11,7 +11,7 @@ class UserGreeting extends StatelessWidget {
           children: [
             Text('Hello Rafsan',
                 style: TextStyle(color: Colors.white, fontSize: 18)),
-            Text("It's movie time!",
+            Text("Let’s watch today",
                 style: TextStyle(color: Colors.grey, fontSize: 14)),
           ],
         ),
