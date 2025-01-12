@@ -10,14 +10,17 @@ import '../widgets/sectionHeader.dart';
 import '../widgets/verticalList.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
         elevation: 0,
-        title: UserGreeting(),
+        title: const UserGreeting(),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -25,28 +28,28 @@ class HomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SearchAndSettings(),
-              SizedBox(height: 16),
+              const SearchAndSettings(),
+              const SizedBox(height: 16),
               SectionHeader(title: 'Categories', onSeeMore: () {}),
-              SizedBox(height: 16),
-              Categories(),
-              SizedBox(height: 16),
-              ImageSlider(),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
+              const Categories(),
+              const SizedBox(height: 16),
+              const ImageSlider(),
+              const SizedBox(height: 16),
               SectionHeader(title: 'Trending Movies', onSeeMore: () {}),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               HorizontalList(items: trendingMovies),
               SectionHeader(title: 'Continue Watching', onSeeMore: () {}),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               VerticalList(items: continueWatching),
               SectionHeader(title: 'Recommended For You', onSeeMore: () {}),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               HorizontalList(items: recommendedForYou),
             ],
           ),
         ),
       ),
-      bottomNavigationBar: CustomBottomNavigationBar(),
+      bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }
 }
