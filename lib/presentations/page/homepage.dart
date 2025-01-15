@@ -17,17 +17,22 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.black,
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        elevation: 0,
-        title: const UserGreeting(),
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(0),
+        child: AppBar(
+          backgroundColor: Colors.black,
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
+
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+
+              const UserGreeting(),
+              const SizedBox(height: 16),
               const SearchAndSettings(),
               const SizedBox(height: 16),
               SectionHeader(title: 'Categories', onSeeMore: () {}),

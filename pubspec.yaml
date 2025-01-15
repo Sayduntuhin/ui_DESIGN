@@ -28,3 +28,5 @@ flutter:
   assets:
      - assets/slider/
      - assets/t_image/
+     - assets/logo/
+     - assets/button_image/

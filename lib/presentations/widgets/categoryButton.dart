@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CategoryButton extends StatefulWidget {
   final String title;
 
-  CategoryButton({required this.title});
+  const CategoryButton({super.key, required this.title});
 
   @override
   _CategoryButtonState createState() => _CategoryButtonState();
@@ -18,7 +18,7 @@ class _CategoryButtonState extends State<CategoryButton> {
       padding: const EdgeInsets.symmetric(horizontal: 8.0),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: isSelected ? Color(0xFFFF3440) : Color(0xFF221821),
+          backgroundColor: isSelected ? const Color(0xFFFF3440) : const Color(0xFF221821),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
           ),
@@ -31,7 +31,7 @@ class _CategoryButtonState extends State<CategoryButton> {
         },
         child: Text(
           widget.title,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
     );

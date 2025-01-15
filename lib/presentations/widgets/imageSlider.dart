@@ -1,8 +1,15 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class ImageSlider extends StatelessWidget {
+class ImageSlider extends StatefulWidget {
   const ImageSlider({super.key});
+
+  @override
+  _ImageSliderState createState() => _ImageSliderState();
+}
+
+class _ImageSliderState extends State<ImageSlider> {
+  int currentIndex = 0; // বর্তমান স্লাইডারের ইন্ডেক্স ট্র্যাক করার জন্য ভেরিয়েবল
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +24,11 @@ class ImageSlider extends StatelessWidget {
             autoPlayInterval: const Duration(seconds: 3),
             autoPlayCurve: Curves.easeInOut,
             scrollPhysics: const BouncingScrollPhysics(),
+            onPageChanged: (index, reason) {
+              setState(() {
+                currentIndex = index; // বর্তমান স্লাইড আপডেট করুন
+              });
+            },
           ),
           items: [
             'assets/slider/image.png',
@@ -50,7 +62,7 @@ class ImageSlider extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 4.0),
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: i == 0 ? Colors.white : const Color(0xFF4F5055),
+                  color: i == currentIndex ? Colors.white : const Color(0xFF4F5055),
                 ),
               ),
           ],

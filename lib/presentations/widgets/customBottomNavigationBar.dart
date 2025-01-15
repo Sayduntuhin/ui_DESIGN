@@ -21,10 +21,10 @@ class CustomBottomNavigationBar extends StatelessWidget {
           selectedItemColor: Colors.red,
           unselectedItemColor: Colors.white,
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: ''),
             BottomNavigationBarItem(icon: Icon(Icons.tv), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.download), label: ''),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.file_download_outlined), label: ''),
+            BottomNavigationBarItem(icon: Icon(Icons.perm_identity_outlined), label: ''),
           ],
         ),
       ),
